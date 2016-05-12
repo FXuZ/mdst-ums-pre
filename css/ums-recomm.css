@@ -13,3 +13,7 @@
     width: 1500px;
   }
 }
+
+div.navbar {
+  background-color: rgb(255, 153, 204);
+}

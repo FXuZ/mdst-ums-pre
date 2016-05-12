@@ -39,7 +39,7 @@
 
   <body data-spy="scroll" data-target="#navbar" data-offset="50">
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: rgb(255, 153, 204);">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -52,8 +52,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collepse">
           <ul class="nav navbar-nav">
-            <li><a href="#">Customers</a></li>
             <li><a href="#">Performances</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Dropouts</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
@@ -65,68 +66,76 @@
     <div class="jumbotron">
       <div class="container">
         <h1>UMS Recommender</h1>
-        <p>Place holder for intro to the project.</p>
         <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
       </div>
     </div>
 
-    <div id="Performances" class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12">
-          <h2>Performances</h2>
-          <span class="span"><p>
-            UMS holds regular performances every year.
-            </p></span>
-          <div><a href="plots/all/Sean/OccupancyRate_Revenue_Performance_Sean_v0.3.html" target="_blank">
-              <img class="img-responsive" src="plots/all/Sean/occup.png" alt="Occupancy Rate and Revenue">
-            </a>
-          </div>
-          <!--<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-time" src="plots/all/Sean/OccupancyRate_Revenue_Performance_Sean_v0.3.html" frameborder="0"/>-->
-          <!--</div>-->
-        </div>
-      </div>
-    </div>
-
-    <div id="Customers" class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <h2>Customers</h2>
-          <p>The customers come not only from Ann Arbor area or even Michigan,
-          people from other states and Canada come to the concerts hosted by UMS.</p>
-        </div>
-        <div class="col-md-9">
-          <div><a href="plots/all/Wenbo/Geographic_Composition_of_Customers.html" target="_blank">
-              <img class="img-responsive" src="plots/all/Wenbo/geographic_comp.png" alt="Geographic Composition of Customers">
-            </a>
+    <div class="container-fluid">
+      <div id="Performances" class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <h2>Performances</h2>
+            <span class="span"><p>
+              UMS holds regular performances every year.
+              </p></span>
+            <div><a href="plots/all/Sean/OccupancyRate_Revenue_Performance_Sean_v0.3.html" target="_blank">
+                <img class="img-responsive" src="plots/all/Sean/occup.png" alt="Occupancy Rate and Revenue">
+              </a>
+            </div>
+            <!--<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-time" src="plots/all/Sean/OccupancyRate_Revenue_Performance_Sean_v0.3.html" frameborder="0"/>-->
+            <!--</div>-->
           </div>
         </div>
       </div>
     </div>
 
-    <div id="perchase_time" class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <h2>Purchasing Time Pattern</h2>
-        </div>
-        <div class="col-md-9">
-          <div class="row"><a href="plots/all/Wenbo/Distribution_of_Advance_Purchase_Time.html" target="_blank">
-              <img class="img-responsive" src="plots/all/Wenbo/advance_dist.png" alt="Difference Between Performance and Purchase Date"></a></div>
-          <div class="row"><a href="plots/all/Wenbo/Distribution_of_Purchase_Dates.html" target="_blank">
-              <img class="img-responsive" src="plots/all/Wenbo/purchase_dist.png" alt="Purchase Date Distribution"></a></div>
-          <!--div.row>a[href="plots/all/Wenbo/"]-->
+    <div class="container-fluid">
+      <div id="Customers" class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h2>Customers</h2>
+            <p>The customers come not only from Ann Arbor area or even Michigan,
+            people from other states and Canada come to the concerts hosted by UMS.</p>
+          </div>
+          <div class="col-md-9">
+            <div><a href="plots/all/Wenbo/Geographic_Composition_of_Customers.html" target="_blank">
+                <img class="img-responsive" src="plots/all/Wenbo/geographic_comp.png" alt="Geographic Composition of Customers">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="active_time" class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <h2>Customer Dropouts</h2>
+    <div class="container-fluid">
+      <div id="perchase_time" class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h2>Purchasing Time Pattern</h2>
+          </div>
+          <div class="col-md-9">
+            <div class="row"><a href="plots/all/Wenbo/Distribution_of_Purchase_Dates.html" target="_blank">
+                <img class="img-responsive" src="plots/all/Wenbo/purchase_dist.png" alt="Purchase Date Distribution"></a></div>
+            <div class="row"><a href="plots/all/Sheng/Sheng_Plot.html" target="_blank">
+                <img class="img-responsive" src="plots/all/Sheng/purchase_perf_diff.png" alt="Difference Between Performance and Purchase Date"></a></div>
+            <div class="row"><a href="plots/all/Wenbo/Distribution_of_Advance_Purchase_Time.html" target="_blank">
+                <img class="img-responsive" src="plots/all/Wenbo/advance_dist.png" alt="Difference Between Performance and Purchase Date"></a></div>
+          </div>
         </div>
-        <div class="col-md-9">
-          <div class="row"><a href="plots/all/Wenbo/Active_Duration_of_Customers.html" target="_blank"><img class="img-responsive" src="plots/all/Wenbo/active_dur.png" alt="Active Duration of Customers"></a></div>
-          <div class="row"><a href="plots/all/Wenbo/Customer_Active_Duration_Distribution.html" target="_blank"><img class="img-responsive" src="plots/all/Wenbo/active_dur_dist.png" alt="Active Duration Distribution"></a></div>
-          <div class="row"><a href="plots/all/Cyrus/buying_rates_wsz=1_labeled.html" target="_blank"><img class="img-responsive" src="plots/all/Cyrus/active_score.png" alt="Monthly Active Scores"></a></div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div id="active_time" class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h2>Customer Dropouts</h2>
+          </div>
+          <div class="col-md-9">
+            <div class="row"><a href="plots/all/Wenbo/Active_Duration_of_Customers.html" target="_blank"><img class="img-responsive" src="plots/all/Wenbo/active_dur.png" alt="Active Duration of Customers"></a></div>
+            <div class="row"><a href="plots/all/Wenbo/Customer_Active_Duration_Distribution.html" target="_blank"><img class="img-responsive" src="plots/all/Wenbo/active_dur_dist.png" alt="Active Duration Distribution"></a></div>
+            <div class="row"><a href="plots/all/Cyrus/buying_rates_wsz=1_labeled.html" target="_blank"><img class="img-responsive" src="plots/all/Cyrus/active_score.png" alt="Monthly Active Scores"></a></div>
+          </div>
         </div>
       </div>
     </div>
