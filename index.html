@@ -13,12 +13,13 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
     <!--Pure.css style sheet-->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <!--<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">-->
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -54,7 +55,7 @@
           <ul class="nav navbar-nav">
             <li><a href="#">Performances</a></li>
             <li><a href="#">Customers</a></li>
-            <li><a href="#">Dropouts</a></li>
+            <li><a href="#">Dropout</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
@@ -71,13 +72,33 @@
     </div>
 
     <div class="container-fluid">
+      <div id="Customers" class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h2>Customers</h2>
+            <p>The customers come not only from Ann Arbor area or even Michigan,
+            people from other states and Canada come to the concerts hosted by UMS.</p>
+          </div>
+          <div class="col-md-9">
+            <div><a href="plots/all/Sean/PurchaseBehavior_by_PriceGroupType_Sean_v0.2.html" target="_blank">
+                <img class="img-responsive" src="plots/all/Sean/time_series.png" alt="Geographic Composition of Customers">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
       <div id="Performances" class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
+            <div class="row">
             <h2>Performances</h2>
-            <span class="span"><p>
-              UMS holds regular performances every year.
-              </p></span>
+              <span class="span"><p>
+                UMS holds regular performances every year.
+                </p></span>
+            </div>
             <div><a href="plots/all/Sean/OccupancyRate_Revenue_Performance_Sean_v0.3.html" target="_blank">
                 <img class="img-responsive" src="plots/all/Sean/occup.png" alt="Occupancy Rate and Revenue">
               </a>
@@ -90,36 +111,21 @@
     </div>
 
     <div class="container-fluid">
-      <div id="Customers" class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <h2>Customers</h2>
-            <p>The customers come not only from Ann Arbor area or even Michigan,
-            people from other states and Canada come to the concerts hosted by UMS.</p>
-          </div>
-          <div class="col-md-9">
-            <div><a href="plots/all/Wenbo/Geographic_Composition_of_Customers.html" target="_blank">
-                <img class="img-responsive" src="plots/all/Wenbo/geographic_comp.png" alt="Geographic Composition of Customers">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
       <div id="perchase_time" class="container">
         <div class="row">
           <div class="col-md-3">
             <h2>Purchasing Time Pattern</h2>
+            <p>
+            The top two plots show the histogram of the relative time difference in purchase and performance date (break down into price groups). Note that it doesn't make sense to look at the relative time for subscription tickets. So we also plot the bottom plot, the purchase frequency in terms of actual (absolute) date. Each peak corresponde to a particular event, such as, the opening of the subscription series, or the opening of the single ticket sales.
+            </p>
           </div>
           <div class="col-md-9">
-            <div class="row"><a href="plots/all/Wenbo/Distribution_of_Purchase_Dates.html" target="_blank">
-                <img class="img-responsive" src="plots/all/Wenbo/purchase_dist.png" alt="Purchase Date Distribution"></a></div>
             <div class="row"><a href="plots/all/Sheng/Sheng_Plot.html" target="_blank">
                 <img class="img-responsive" src="plots/all/Sheng/purchase_perf_diff.png" alt="Difference Between Performance and Purchase Date"></a></div>
             <div class="row"><a href="plots/all/Wenbo/Distribution_of_Advance_Purchase_Time.html" target="_blank">
                 <img class="img-responsive" src="plots/all/Wenbo/advance_dist.png" alt="Difference Between Performance and Purchase Date"></a></div>
+            <div class="row"><a href="plots/all/Wenbo/Distribution_of_Purchase_Dates.html" target="_blank">
+                <img class="img-responsive" src="plots/all/Wenbo/purchase_dist.png" alt="Purchase Date Distribution"></a></div>
           </div>
         </div>
       </div>
@@ -129,7 +135,10 @@
       <div id="active_time" class="container">
         <div class="row">
           <div class="col-md-3">
-            <h2>Customer Dropouts</h2>
+            <h2>Customer Dropout</h2>
+            <p>
+            We found a huge amount of buyers only make purhase in one single day in the 3 year period we are looking at. We also define the "active duration" to be the the first order date minus the last order date. We found strong peak in the 1-year period. Also we define the "Activeness score" to maintain positive and increase if someone buys in 1-month period, and decrease if someone continues to not buying. We found strong peaks in the fall and winter semester, implying people are not planning and purchasing too much ahead.
+            </p>
           </div>
           <div class="col-md-9">
             <div class="row"><a href="plots/all/Wenbo/Active_Duration_of_Customers.html" target="_blank"><img class="img-responsive" src="plots/all/Wenbo/active_dur.png" alt="Active Duration of Customers"></a></div>
